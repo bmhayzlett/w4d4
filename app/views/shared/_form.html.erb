@@ -1,0 +1,10 @@
+<% action = (music.persisted? ? band_url(band) : band_url) %>
+<% method = (@band.persisted? ? :patch : :post) %>
+<form action="<%= action %>" method="post">
+  <input type="hidden" name="_method" value="<%= method %>">
+<%= action %>
+  <%# render "new_name", class_type: asdfasd %>
+
+  <%# render "new_attribute" unless music = "band", class_type: asdfasdfas %>
+
+<%= music %>
